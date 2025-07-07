@@ -23,12 +23,12 @@ public class Main {
             System.out.print("Choose an option: ");
             if (!scanner.hasNextInt()) {
                 System.out.println("Invalid input. Please enter a number.\n");
-                scanner.nextLine(); // Clear invalid input
+                scanner.nextLine();
                 continue;
             }
 
             choice = scanner.nextInt();
-            scanner.nextLine(); // Clear buffer
+            scanner.nextLine();
 
             switch (choice) {
                 case 1 -> {
