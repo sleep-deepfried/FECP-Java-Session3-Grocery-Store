@@ -77,9 +77,11 @@ public class Main {
                 case 5 -> {
                     System.out.print("Enter product name to remove: ");
                     String removeProduct = scanner.nextLine().trim();
-                    Map<String, Integer> updatedInventory = groceryStoreInventory.removeProduct(removeProduct);
-                    if (!updatedInventory.containsKey(removeProduct)) {
-                        System.out.println(removeProduct + " has been removed (if it existed).\n");
+                    boolean removeExistingProduct = groceryStoreInventory.removeProduct(removeProduct);
+                    if (removeExistingProduct) {
+                        System.out.println(removeProduct + " has been removed.\n");
+                    }else {
+                        System.out.println(removeProduct + "does not exist! \n");
                     }
                 }
                 case 6 -> {

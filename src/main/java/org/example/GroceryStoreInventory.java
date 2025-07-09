@@ -22,9 +22,12 @@ public class GroceryStoreInventory {
         }
         return false;
     }
-    public Map<String, Integer> removeProduct(String product) {
-        inventory.remove(product);
-        return inventory;
+    public boolean removeProduct(String product){
+        if (inventory.containsKey(product)){
+            inventory.remove(product);
+            return true;
+        }
+        return false;
     }
 
     public Map<String, Integer> viewInventory() {

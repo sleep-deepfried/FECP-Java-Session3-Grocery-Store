@@ -1,3 +1,6 @@
+## Earl John Pulido
+#### Lead, Cadet Engineer
+
 ## Grocery Store Inventory System
 Use HashMap to manage a grocery store’s inventory, where each product has a name and a quantity in stock.
 
@@ -23,3 +26,12 @@ You are managing the inventory system of a small grocery store. You need to:
 
 ### View Products
 ![img_4.png](img_4.png)
+
+
+## Sample Test Output
+
+### Unit Test Output
+![img_5.png](img_5.png)
+
+## Unit Test Coverage
+![img_6.png](img_6.png)
